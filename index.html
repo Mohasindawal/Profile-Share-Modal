@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+   
+<div class="wrapper relative flex justify-center items-center w-[100vw] h-[100vh] bg-black">
+    <div class="circleTop1 w-[9em] h-[9em] rounded-full absolute top-[2em] left-[31%]"></div>
+    <div class="circleBottom z-10 w-[12em] h-[12em] rounded-full absolute bottom-[15px] right-[30%]"></div>
+
+    <div class="z-20">
+
+            <div class="card flex flex-col justify-center items-center gap-5 w-[20em] h-[22em]">
+            <img class="w-[8em] h-[8em] rounded-full object-cover" src="./photo_2023-08-10_00-55-25.jpg" alt="">
+            <h1 class="user-name mt-6 text-[1.5rem]">Mohasin Jawale</h1>
+            <p class="profession">Web Developer</p>
+
+            <div class="buttons-group flex">
+                <button id="share-btn" class="flex px-4 mr-2 border rounded-md transition duration-700 ease-in-out hover:bg-[#ffffffb9] hover:text-black"><i class="fa-solid fa-share pt-1 pr-2"></i>Share My Profile</button>
+                <button id="follow-btn" class="px-3 border rounded-md transition duration-700 ease-in-out hover:bg-[#ffffffb9] hover:text-black">Follow Me</button>
+            </div>
+ 
+        </div>
+    
+    </div>
+
+
+    <div class="modal" id="profile-modal">
+        <!-- modal header -->
+        <div class="modal-header">
+            <h2 class="modal-title">Share My Profile</h2>
+            <div>
+                <i class="fa-solid fa-xmark modal-close" id="profile-modal-close"></i>
+            </div>
+        </div>
+
+
+<div class="modal-body">
+    <h3>Share this via</h3>
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/mohasin-jawale-403931215" id="linkedin-icon" class="icon" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>        </a>
+        <a href="https://twitter.com/MohasinJawale" id="twitter-icon" class="icon" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com/_mohsin_jawale?igshid=OGQ5ZDc2ODk2ZA==" id="instagram-icon" class="icon" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/9833725981?text=Hi%20Mohasin" id="whatsapp-icon" class="icon" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://t.me/Mohasindawal" id="telegram-icon" class="icon" target="_blank">
+            <i class="fa-brands fa-telegram"></i>
+        </a>
+    </div>
+</div>
+
+
+</div>
+
+<!-- /// follow Modal starts /// -->
+<div class="modal" id="follow-modal">
+    <!-- modal header -->
+    <div class="modal-header">
+        <h2 class="modal-title">Github Profile</h2>
+        <div>
+            <i class="fa-solid fa-xmark modal-close" id="follow-modal-close"></i>
+        </div>
+    </div>
+
+    <!-- modal body -->
+    <div class="modal-body">
+        <h3>Check my Repositories</h3>
+
+        <div class="social-icons">
+            <a href="https://github.com/Mohasindawal/profile-share-modal" id="github-icon" class="icon" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://github.com/Mohasindawal" id="follow-unfollow" target="_blank">
+                Follow
+            </a>
+        </div>
+    </div>
+</div>
+<!-- /// follow Modal ends /// -->
+ <!-- overlay -->
+ <div class="overlay" id="overlay"></div>
+ <!-- custom script -->
+ <script src="project1.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    /></body>
+</html>
